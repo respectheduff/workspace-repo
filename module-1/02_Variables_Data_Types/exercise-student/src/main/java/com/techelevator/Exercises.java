@@ -342,64 +342,76 @@ public class Exercises {
         bite-sized pretzels. If one serving is equal to 12 pretzels, how many
         servings of bite-sized pretzels was Marian able to prepare?
         */
-
-
+		int pretzelsInTotal = 480;
+		int servingSize = 12;
+		int servingsInTotal = pretzelsInTotal / servingSize;
         /* Exercise 44
         44. Lastly, she baked 53 lemon cupcakes for the children living in the city
         orphanage. If two lemon cupcakes were left at home, how many
         boxes with 3 lemon cupcakes each were given away?
         */
-
-
+		int cupcakeInTotal = 53;
+		int cupcakesLeftHome = 2;
+		int cupcakesPerBox = 3;
+		int boxesInTotal = (cupcakeInTotal - cupcakesLeftHome) / cupcakesPerBox;
         /* Exercise 45
         45. Susie's mom prepared 74 carrot sticks for breakfast. If the carrots
         were served equally to 12 people, how many carrot sticks were left
         uneaten?
         */
-
-
+		int carrotsInTotal = 74;
+		int eatersInTotal = 12;
+		int	carrotsLeftOver = carrotsInTotal % eatersInTotal;
         /* Exercise 46
         46. Susie and her sister gathered all 98 of their teddy bears and placed
         them on the shelves in their bedroom. If every shelf can carry a
         maximum of 7 teddy bears, how many shelves will be filled?
         */
-
-
+		int totalTeddyBears = 98;
+		int teddysPerShelf = 7;
+		int numberOfShelvesFilled = totalTeddyBears / teddysPerShelf;
         /* Exercise 47
         47. Susie’s mother collected all family pictures and wanted to place all of
         them in an album. If an album can contain 20 pictures, how many
         albums will she need if there are 480 pictures?
         */
-
-
+		int totalPictures = 480;
+		int picturesPerAlbum = 20;
+		int albumsInTotal = totalPictures / picturesPerAlbum;
         /* Exercise 48
         48. Joe, Susie’s brother, collected all 94 trading cards scattered in his
         room and placed them in boxes. If a full box can hold a maximum of 8
         cards, how many boxes were filled and how many cards are there in
         the unfilled box?
         */
-
-
+		int cardsInTotal = 94;
+		int cardsPerBox = 8;
+		int boxInTotal = cardsInTotal / cardsPerBox;
         /* Exercise 49
         49. Susie’s father repaired the bookshelves in the reading room. If he has
         210 books to be distributed equally on the 10 shelves he repaired,
         how many books will each shelf contain?
         */
-
-
+		int booksTotal = 210;
+		int numberOfShelves = 10;
+		int booksPerShelf = booksTotal / numberOfShelves;
         /* Exercise 50
         50. Cristina baked 17 croissants. If she planned to serve this equally to
         her seven guests, how many will each have?
         */
-
-
+		int bakedgoods = 17;
+		int guests = 7;
+		int bakedPerGuest = bakedgoods / guests;
 	    /* Exercise 51
 	    51. Bill and Jill are house painters. Bill can paint a 12 x 14 room in 2.15 hours, while Jill averages
 	    1.90 hours. How long will it take the two painters working together to paint 5 12 x 14 rooms?
 	    Hint: Calculate the hourly rate for each painter, combine them, and then divide the total walls in feet by the combined hourly rate of the painters.
 	    */
-
-
+		int feetPerRoom = (12 * 2) + ( 14 * 2);
+		double aveFeetPerHourBill = feetPerRoom /2.15;
+		double aveFeetPerHourJill = feetPerRoom /1.9;
+		double combinedFph = aveFeetPerHourBill + aveFeetPerHourJill;
+		double timeToPaint5Rooms = (feetPerRoom * 5) / combinedFph;
 	    /* Exercise 52
 	    52. Create and assign variables to hold a first name, last name, and middle initial. Using concatenation,
 		build an additional variable to hold the full name in the order of last name, first name, middle initial. The
@@ -407,7 +419,10 @@ public class Exercises {
 		with a period. Use "Grace", "Hopper, and "B" for the first name, last name, and middle initial.
 		Example: "John", "Smith, "D" —> "Smith, John D."
 	    */
-
+		String firstName = "Grace";
+		String lastName = "Hopper";
+		String middleInitial = "B";
+		String fullName = lastName + ", " + firstName + middleInitial + ".";
 
 	    /* Exercise 53
 	    53. The distance between New York and Chicago is 800 miles, and the train has already travelled 537 miles.
