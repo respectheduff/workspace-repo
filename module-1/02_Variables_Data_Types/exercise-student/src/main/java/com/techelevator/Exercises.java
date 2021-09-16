@@ -238,23 +238,23 @@ public class Exercises {
         29. Kate gave the clerk $1.00. Her candy cost 54 cents. How much change
         should Kate get back?
         */
-		double
-		double
-		double
+		double moneyHanded = 1.00;
+		double candyCosts = .54;
+		double changedExpected = moneyHanded - candyCosts;
         /* Exercise 30
         30. Mark has 13 trees in his backyard. If he plants 12 more, how many trees
         will he have?
         */
-		int
-		int
-		int
+		int treesAtStart = 13;
+		int treesToBePlanted = 12;
+		int treesInTotal = treesAtStart + treesToBePlanted;
 
         /* Exercise 31
         31. Joy will see her grandma in two days. How many hours until she sees
         her?
         */
-		int
-		int
+		int oneDay = 24;
+		int twoDays = oneDay * 2;
 
         /* Exercise 32
         32. Kim has 4 cousins. She wants to give each one 5 pieces of gum. How
@@ -262,21 +262,21 @@ public class Exercises {
         */
 		int numberOfCousins = 4;
 		int piecesPerCousin = 5;
-		int
+		int piecesInTotal = numberOfCousins * piecesPerCousin;
         /* Exercise 33
         33. Dan has $3.00. He bought a candy bar for $1.00. How much money is
         left?
         */
 		double currentWallet = 3.0;
 		double moneyOnCandy = 1.0;
-		double
+		double moneyLeft = currentWallet - moneyOnCandy;
         /* Exercise 34
         34. 5 boats are in the lake. Each boat has 3 people. How many people are
         on boats in the lake?
         */
 		int boatsOnLake = 5;
 		int peoplePerBoat = 3;
-		int
+		int peopleInTotal = boatsOnLake * peoplePerBoat;
 
         /* Exercise 35
         35. Ellen had 380 legos, but she lost 57 of them. How many legos does she
@@ -284,57 +284,59 @@ public class Exercises {
         */
 		int legosAtStart = 380;
 		int legosLost = 57;
-		int
+		int legosLeft = legosAtStart - legosLost;
         /* Exercise 36
         36. Arthur baked 35 muffins. How many more muffins does Arthur have to
         bake to have 83 muffins?
         */
 		int muffinsNeeded = 83;
 		int muffinsMade = 35;
-		int
+		int muffinsLeft = muffinsNeeded - muffinsMade;
         /* Exercise 37
         37. Willy has 1400 crayons. Lucy has 290 crayons. How many more
         crayons does Willy have then Lucy?
         */
 		int willCrayons = 1400;
 		int lucyCrayons = 290;
-		int
+		int differenceInCrayons = willCrayons - lucyCrayons;
         /* Exercise 38
         38. There are 10 stickers on a page. If you have 22 pages of stickers, how
         many stickers do you have?
         */
-		int
-		int
-		int
+		int stickersPerPage = 10;
+		int pagesInTotal = 22;
+		int stickersInTotal = stickersPerPage * pagesInTotal;
         /* Exercise 39
         39. There are 100 cupcakes for 8 children to share. How much will each
         person get if they share the cupcakes equally?
         */
-		int
-		int
-		int
+		int cupcakesInTotal = 100;
+		int childrenInTotal = 8;
+		int cupcakesPerChild = cupcakesInTotal / childrenInTotal;
         /* Exercise 40
         40. She made 47 gingerbread cookies which she will distribute equally in
         tiny glass jars. If each jar is to contain six cookies, how many
         cookies will not be placed in a jar?
         */
-		int
-		int
-		int
+		int cookiesInTotal = 47;
+		int cookiesPerJar = 6;
+		int jarsInTotal = cookiesInTotal / cookiesPerJar;
         /* Exercise 41
         41. She also prepared 59 croissants which she plans to give to her 8
         neighbors. If each neighbor received an equal number of croissants,
         how many will be left with Marian?
         */
-
-
+		int croissantsInTotal = 59;
+		int neighborsInTotal = 8;
+		int croissantsPerNeighbor = croissantsInTotal / neighborsInTotal;
         /* Exercise 42
         42. Marian also baked oatmeal cookies for her classmates. If she can
         place 12 cookies on a tray at a time, how many trays will she need to
         prepare 276 oatmeal cookies at a time?
         */
-
-
+		int cookiesPerTray = 12;
+		int cookieInTotal = 276;
+		int traysNeeded = cookieInTotal / cookiesPerTray;
         /* Exercise 43
         43. Marian’s friends were coming over that afternoon so she made 480
         bite-sized pretzels. If one serving is equal to 12 pretzels, how many
