@@ -430,8 +430,8 @@ public class Exercises {
 	    */
 		int chicagoToNewYork = 800;
 		int milesTravelled = 537;
-		double percentComplete = (double)milesTravelled / chicagoToNewYork;
-		int percentCompleteAsInteger = (int)(percentComplete * 100);
+		double percentCompletes = (double)milesTravelled / chicagoToNewYork;
+		int percentCompleteAsInteger = (int)(percentCompletes * 100);
 	}
 
 }
