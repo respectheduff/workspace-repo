@@ -26,143 +26,186 @@ public class Exercises {
         3. 3 raccoons are playing in the woods. 2 go home to eat dinner. How
         many raccoons are left in the woods?
         */
-
+		int numberInWoods = 3;
+		int numberWentHome = 2;
+		int numberLeftInWoods = numberInWoods - numberWentHome;
 
         /* Exercise 4
         4. There are 5 flowers and 3 bees. How many less bees than flowers?
         */
-
+		int numberOfFlowers = 5;
+		int numberOfBees = 3;
+		int flowersLeftOver = numberOfFlowers - numberOfBees;
 
         /* Exercise 5
         5. 1 lonely pigeon was eating breadcrumbs. Another pigeon came to eat
         breadcrumbs, too. How many pigeons are eating breadcrumbs now?
         */
-
+		int numberAtStart = 1;
+		int numberThatJoined = 1;
+		int numberInTotal = numberAtStart + numberThatJoined;
 
         /* Exercise 6
         6. 3 owls were sitting on the fence. 2 more owls joined them. How many
         owls are on the fence now?
         */
-
+		int numberOnFence = 3;
+		int	numberWhoJoined = 2;
+		int newNumberInTotal = numberOnFence + numberWhoJoined;
 
         /* Exercise 7
         7. 2 beavers were working on their home. 1 went for a swim. How many
         beavers are still working on their home?
         */
-
+		int numberOfWorking = 2;
+		int numberWhoSwam = 1;
+		int	numberStillWorking = numberOfWorking - numberWhoSwam;
 
         /* Exercise 8
         8. 2 toucans are sitting on a tree limb. 1 more toucan joins them. How
         many toucans in all?
         */
-
+		int numberSittingOnTree = 2;
+		int numberThatCome = 1;
+		int numberTogether = numberSittingOnTree + numberThatCome;
 
         /* Exercise 9
         9. There are 4 squirrels in a tree with 2 nuts. How many more squirrels
         are there than nuts?
         */
-
-
+		int squirrelsInTree = 4;
+		int nutsInTree = 2;
+		int moreSquirrels = squirrelsInTree - nutsInTree;
         /* Exercise 10
         10. Mrs. Hilt found a quarter, 1 dime, and 2 nickels. How much money did
         she find?
         */
-
-
+		double quarter = .25;
+		double dime = .10;
+		double nickel = .05;
+		double total = quarter + dime + nickel + nickel;
         /* Exercise 11
         11. Mrs. Hilt's favorite first grade classes are baking muffins. Mrs. Brier's
         class bakes 18 muffins, Mrs. MacAdams's class bakes 20 muffins, and
         Mrs. Flannery's class bakes 17 muffins. How many muffins does first
         grade bake in all?
         */
-
+		double briarsMuffin = 18;
+		double macAdamsMuffin = 20;
+		double flannerysMuffin = 17;
+		double totalMuffins = briarsMuffin+macAdamsMuffin+flannerysMuffin;
 
         /* Exercise 12
         12. Mrs. Hilt bought a yoyo for 24 cents and a whistle for 14 cents. How
         much did she spend in all for the two toys?
         */
-
+		double yoyoPrice = 24;
+		double whistlePrice = 14;
+		double totalCents = yoyoPrice + whistlePrice;
 
         /* Exercise 13
         13. Mrs. Hilt made 5 Rice Krispies Treats. She used 8 large marshmallows
         and 10 mini marshmallows.How many marshmallows did she use
         altogether?
         */
-
+		double largeMarshmellows = 8;
+		double miniMarshmellows = 10;
+		double totalMarshmellows = largeMarshmellows + macAdamsMuffin;
 
         /* Exercise 14
         14. At Mrs. Hilt's house, there was 29 inches of snow, and Brecknock
         Elementary School received 17 inches of snow. How much more snow
         did Mrs. Hilt's house have?
         */
-
+		double hiltsHouse = 29;
+		double elementarySchool = 17;
+		double moreSnow = hiltsHouse-elementarySchool;
 
         /* Exercise 15
         15. Mrs. Hilt has $10. She spends $3 on a toy truck and $2 on a pencil
         case. How much money does she have left?
         */
-
+		double moneyAtStart = 10;
+		double moneyOnTruck = 3;
+		double moneyOnPencil = 2;
+		double moneyLeftOver = moneyAtStart-moneyOnTruck-moneyOnPencil;
 
         /* Exercise 16
         16. Josh had 16 marbles in his collection. He lost 7 marbles. How many
         marbles does he have now?
         */
-
+		double marbleAtStart = 16;
+		double marblesLost = 7;
+		double marblesLeft = marbleAtStart - marblesLost;
 
         /* Exercise 17
         17. Megan has 19 seashells. How many more seashells does she need to
         find to have 25 seashells in her collection?
         */
-
+		double seaShellsNeeded = 25;
+		double currentSeaShells = 19;
+		double howManySheNeeds = seaShellsNeeded - currentSeaShells;
 
         /* Exercise 18
         18. Brad has 17 balloons. 8 balloons are red and the rest are green. How
         many green balloons does Brad have?
         */
-
+		double totalBalloons = 17;
+		double redBalloons = 8;
+		double greenBalloons =  totalBalloons - redBalloons;
 
         /* Exercise 19
         19. There are 38 books on the shelf. Marta put 10 more books on the shelf.
         How many books are on the shelf now?
         */
-
+		double booksAtStart = 38;
+		double booksAdded = 10;
+		double booksInTotal = booksAtStart + booksAdded;
 
         /* Exercise 20
         20. A bee has 6 legs. How many legs do 8 bees have?
         */
-
+		double oneBee = 6;
+		double totalLegs = oneBee*8;
 
         /* Exercise 21
         21. Mrs. Hilt bought an ice cream cone for 99 cents. How much would 2 ice
         cream cones cost?
         */
-
+		double oneCone = .99;
+		double twoCones = oneCone+oneCone;
 
         /* Exercise 22
         22. Mrs. Hilt wants to make a border around her garden. She needs 125
         rocks to complete the border. She has 64 rocks. How many more rocks
         does she need to complete the border?
         */
-
+		double rocksInTotal = 125;
+		double rocksInHand = 64;
+		double rocksNeeded = rocksInTotal-rocksInHand;
 
         /* Exercise 23
         23. Mrs. Hilt had 38 marbles. She lost 15 of them. How many marbles does
         she have left?
         */
-
+		double hiltsStartMarbles = 38;
+		double hiltsLostMarbles = 15;
+		double hiltsMarblesLeft = hiltsStartMarbles-hiltsLostMarbles;
 
         /* Exercise 24
         24. Mrs. Hilt and her sister drove to a concert 78 miles away. They drove 32
         miles and then stopped for gas. How many miles did they have left to drive?
         */
-
+		double distanceToDrive = 78;
+		double distanceDriveToGas = 32;
+		double distanceLeft =  distanceToDrive-distanceDriveToGas;
 
         /* Exercise 25
         25. Mrs. Hilt spent 1 hour and 30 minutes shoveling snow on Saturday
         morning and 45 minutes shoveling snow on Saturday afternoon. How
         much total time (in minutes) did she spend shoveling snow?
         */
-
+ 		
 
         /* Exercise 26
         26. Mrs. Hilt bought 6 hot dogs. Each hot dog cost 50 cents. How much
