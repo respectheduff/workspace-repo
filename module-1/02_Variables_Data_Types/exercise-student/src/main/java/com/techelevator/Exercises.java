@@ -260,57 +260,67 @@ public class Exercises {
         32. Kim has 4 cousins. She wants to give each one 5 pieces of gum. How
         much gum will she need?
         */
-		int
+		int numberOfCousins = 4;
+		int piecesPerCousin = 5;
 		int
         /* Exercise 33
         33. Dan has $3.00. He bought a candy bar for $1.00. How much money is
         left?
         */
-
-
+		double currentWallet = 3.0;
+		double moneyOnCandy = 1.0;
+		double
         /* Exercise 34
         34. 5 boats are in the lake. Each boat has 3 people. How many people are
         on boats in the lake?
         */
-
+		int boatsOnLake = 5;
+		int peoplePerBoat = 3;
+		int
 
         /* Exercise 35
         35. Ellen had 380 legos, but she lost 57 of them. How many legos does she
         have now?
         */
-
-
+		int legosAtStart = 380;
+		int legosLost = 57;
+		int
         /* Exercise 36
         36. Arthur baked 35 muffins. How many more muffins does Arthur have to
         bake to have 83 muffins?
         */
-
-
+		int muffinsNeeded = 83;
+		int muffinsMade = 35;
+		int
         /* Exercise 37
         37. Willy has 1400 crayons. Lucy has 290 crayons. How many more
         crayons does Willy have then Lucy?
         */
-
-
+		int willCrayons = 1400;
+		int lucyCrayons = 290;
+		int
         /* Exercise 38
         38. There are 10 stickers on a page. If you have 22 pages of stickers, how
         many stickers do you have?
         */
-
-
+		int
+		int
+		int
         /* Exercise 39
         39. There are 100 cupcakes for 8 children to share. How much will each
         person get if they share the cupcakes equally?
         */
-
-
+		int
+		int
+		int
         /* Exercise 40
         40. She made 47 gingerbread cookies which she will distribute equally in
         tiny glass jars. If each jar is to contain six cookies, how many
         cookies will not be placed in a jar?
         */
-
-
+		int
+		int
+		int
         /* Exercise 41
         41. She also prepared 59 croissants which she plans to give to her 8
         neighbors. If each neighbor received an equal number of croissants,
