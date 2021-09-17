@@ -261,7 +261,13 @@ public class Exercises {
 	 */
 	public boolean cigarParty(int cigars, boolean isWeekend) {
 		if( cigars > 40 && cigars < 60 && !isWeekend){
-
+           return true;
+		}
+		if( cigars > 40 && cigars < 60 && isWeekend){
+			return true;
+		}
+		if( cigars > 40 && cigars > 60 && isWeekend){
+			return true;
 		}
 		return false;
 	}
@@ -278,6 +284,7 @@ public class Exercises {
 	 dateFashion(5, 5) → 1
 	 */
 	public int dateFashion(int you, int date) {
+		if(){}
 		return 0;
 	}
 
