@@ -241,7 +241,12 @@ public class Exercises {
 	 max1020(11, 9) → 11
 	 */
 	public int max1020(int a, int b) {
-		if(){}
+		if(a > 10 && a < 20 && a > b){
+			return a;
+		}
+		if(b > 10 && b < 20 && b > a){
+			return b;
+		}
 		return 0;
 	}
 
@@ -255,6 +260,9 @@ public class Exercises {
 	 cigarParty(70, true) → true
 	 */
 	public boolean cigarParty(int cigars, boolean isWeekend) {
+		if( cigars > 40 && cigars < 60 && !isWeekend){
+
+		}
 		return false;
 	}
 
