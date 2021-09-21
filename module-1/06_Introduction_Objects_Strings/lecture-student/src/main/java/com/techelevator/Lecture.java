@@ -18,15 +18,22 @@ public class Lecture {
 
 		/* create an new instance of String using a literal */
 		String name = "Tom";
+<<<<<<< HEAD
+		//String name = new String("tom");
+=======
 		// String name = new String("Tom");
+>>>>>>> 54ff2371e7f81d21f332166a785c28339515b2b2
 
-		
 		System.out.println();
 		System.out.println("******************************");
 		System.out.println("****** MEMBER METHODS ******");
 		System.out.println("******************************");
 		System.out.println();
 
+<<<<<<< HEAD
+		String obligatory = "Hello World";
+		obligatory.charAt(0) //is the same as calling the 0 index from an array
+=======
 		//                   000000000011111111112222222222233333333334
 		//                   012345678901234567890123456789012345678901
 		String obligatory = "Hello World, You're World awesome World and I love you";
@@ -78,6 +85,7 @@ public class Lecture {
 		String slightlyLessGarbage = garbage.trim();
 		// "Hello There Tom this is a long       sentence"
 
+>>>>>>> 54ff2371e7f81d21f332166a785c28339515b2b2
 
 		/* Other commonly used methods:
 		 *
