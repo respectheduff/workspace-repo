@@ -14,14 +14,17 @@ public class Lecture {
 		 * is not the case for most classes */
 
 		/* create an new instance of String using a literal */
+		String name = "Tom";
+		//String name = new String("tom");
 
-		
 		System.out.println();
 		System.out.println("******************************");
 		System.out.println("****** MEMBER METHODS ******");
 		System.out.println("******************************");
 		System.out.println();
 
+		String obligatory = "Hello World";
+		obligatory.charAt(0) //is the same as calling the 0 index from an array
 
 		/* Other commonly used methods:
 		 *
