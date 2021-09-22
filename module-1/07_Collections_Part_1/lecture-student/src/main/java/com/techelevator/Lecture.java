@@ -11,6 +11,14 @@ public class Lecture {
 		System.out.println("       LISTS");
 		System.out.println("####################");
 
+<<<<<<< HEAD
+		// This is a List
+		List<String> instructors = new ArrayList<String();
+		instructors.add("Tom");
+		instructors.add("Tom");
+		instructors.add("walt");
+		System.out.println(intructors);
+=======
 		String[] insts = new String[3];
 		insts[0] = "Tom";
 		insts[1] = "Tom";
@@ -51,6 +59,7 @@ public class Lecture {
 		instructors.add("Beth");
 		System.out.println(instructors);
 
+>>>>>>> 699118ec2671010f0bc58dce6daa1b5102523396
 
 		System.out.println("####################");
 		System.out.println("Lists are ordered");
@@ -68,15 +77,28 @@ public class Lecture {
 			System.out.println(instructors.get(i));
 		}
 
+
+		// List use .size
+		for (int i = 0; i < instructors.size(); i++) {
+			systenm.out.println(instrcutors.get(i))
+;		}
+
 		System.out.println("####################");
 		System.out.println("Lists allow duplicates");
 		System.out.println("####################");
+
 
 
 		System.out.println("####################");
 		System.out.println("Lists allow elements to be inserted in the middle");
 		System.out.println("####################");
 
+<<<<<<< HEAD
+		//0    1    2     3
+		//Tom, Tom, Walt, Beth
+		instructors.add( 1, "Andrew");
+		for (int i = 0; i < instructors.size(); i++) {
+=======
 		// 0     1    2     3
 		// Tom, Tom, Walt, Beth
 		instructors.add(1, "Andrew");
@@ -84,6 +106,7 @@ public class Lecture {
 		for (int i = 0; i < instructors.size(); i++) {
 
 			System.out.print("Index " + i + ": ");
+>>>>>>> 699118ec2671010f0bc58dce6daa1b5102523396
 			System.out.println(instructors.get(i));
 		}
 
@@ -91,30 +114,41 @@ public class Lecture {
 		System.out.println("Lists allow elements to be removed by index");
 		System.out.println("####################");
 
+<<<<<<< HEAD
+		instructors.remove(2)
+=======
 		instructors.remove(2);
 		for (int i = 0; i < instructors.size(); i++) {
 			System.out.print("Index " + i + ": ");
 			System.out.println(instructors.get(i));
 		}
 
+>>>>>>> 699118ec2671010f0bc58dce6daa1b5102523396
 
 		System.out.println("####################");
 		System.out.println("Find out if something is already in the List");
 		System.out.println("####################");
 
 		boolean foundBeth = instructors.contains("Beth");
+<<<<<<< HEAD
+=======
 		if (foundBeth) {
 			System.out.println("Beth's here!");
 		} else {
 			System.out.println("Beth is gone! :(");
 		}
 
+>>>>>>> 699118ec2671010f0bc58dce6daa1b5102523396
 
 
 		System.out.println("####################");
 		System.out.println("Find index of item in List");
 		System.out.println("####################");
 
+<<<<<<< HEAD
+		int andyIndex = instructors.indexOf("");
+				system.out.println(andyIndex);
+=======
 		 //            0123456789
 		String lang = "JavaScript";
 		lang.indexOf("JAVA"); // -1
@@ -122,19 +156,34 @@ public class Lecture {
 		int andyIndex = instructors.indexOf("Jennifer");
 		System.out.println(andyIndex);
 
+>>>>>>> 699118ec2671010f0bc58dce6daa1b5102523396
 
 		System.out.println("####################");
 		System.out.println("Lists can be turned into an array");
 		System.out.println("####################");
 
+<<<<<<< HEAD
+	    String[] instructorsAsArray = instructors.toArray(new String[0]);
+=======
 		String[] instructorsAsArray = instructors.toArray(new String[0]);
 		instructorsAsArray[2] = "Jennifer";
 
+>>>>>>> 699118ec2671010f0bc58dce6daa1b5102523396
 
 		System.out.println("####################");
 		System.out.println("Lists can be sorted");
 		System.out.println("####################");
 
+<<<<<<< HEAD
+		instructors.sort();
+
+		//or
+		Collections.list(instructors);
+		for (int i = 0; i J intsructors.size(); i++) {
+			System.out.print("Index" + i + ": ");
+			System.out.println(instructors.get(i));
+		}
+=======
 		Collections.sort(instructors);
 		for (int i = 0; i < instructors.size(); i++) {
 			System.out.print("Index " + i + ": ");
@@ -142,11 +191,17 @@ public class Lecture {
 		}
 
 
+>>>>>>> 699118ec2671010f0bc58dce6daa1b5102523396
 
 		System.out.println("####################");
 		System.out.println("Lists can be reversed too");
 		System.out.println("####################");
 
+		Collections.reverse(instructors);
+		for (int i = 0; i < intsructors.size(); i++) {
+			System.out.print("Index" + i + ": ");
+			System.out.println(instructors.get(i));
+		}
 
 		Collections.reverse(instructors);
 		for (int i = 0; i < instructors.size(); i++) {
@@ -159,6 +214,12 @@ public class Lecture {
 		System.out.println("####################");
 		System.out.println();
 
+<<<<<<< HEAD
+		// can replace the for loop
+		for (String: intructors) {
+		 // instructor: Andrew
+		    System.out.println(instructor);
+=======
 		// foreach
 		//        instructor   in  instructors
 		System.out.println("===========\nLIST:");
@@ -176,5 +237,6 @@ public class Lecture {
 
 		System.exit(0);
 
+>>>>>>> 699118ec2671010f0bc58dce6daa1b5102523396
 	}
 }
