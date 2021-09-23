@@ -15,8 +15,15 @@ public class Exercises {
 	 array2List( {"Red", "Orange", "Yellow"} )  ->  ["Red", "Orange", "Yellow"]
 	 array2List( {"Left", "Right", "Forward", "Back"} )  ->  ["Left", "Right", "Forward", "Back"]
 	 */
+	//                  Method ( the proccesses that will be done
 	public List<String> array2List(String[] stringArray) {
-		return null;
+		List<String> fruits = new ArrayList<>();
+		for (int i = 0; i < stringArray.length; i++) {
+			fruits.add(stringArray[i]);
+
+		}
+
+		return fruits;
 	}
 
 	/*
@@ -25,8 +32,15 @@ public class Exercises {
 	 list2Array( ["Red", "Orange", "Yellow"] )  ->  {"Red", "Orange", "Yellow"}
 	 list2Array( ["Left", "Right", "Forward", "Back"] )  ->  {"Left", "Right", "Forward", "Back"}
 	 */
+
+	// need a type of for loop the type forEach
 	public String[] list2Array(List<String> stringList) {
-		return null;
+		String[] fruits = new String[]{};
+		for(String allfruits : fruits) {
+
+		}
+
+		return fruits;
 	}
 
 	/*
@@ -37,6 +51,7 @@ public class Exercises {
 	 no4LetterWords( {"Jack", "Jill", "Jane", "John", "Jim"} )  ->  ["Jim"]
 	 */
 	public List<String> no4LetterWords(String[] stringArray) {
+
 		return null;
 	}
 

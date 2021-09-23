@@ -8,7 +8,11 @@ public class Exercises {
 	 helloName("Alice") → "Hello Alice!"
 	 helloName("X") → "Hello X!"
 	 */
-	public String helloName(String name) {
+	public String helloName() {
+
+		String helloName = "jim";
+		System.out.println("Hello" + " " + helloName);
+
 		return null;
 	}
 
@@ -20,6 +24,7 @@ public class Exercises {
 	 makeAbba("What", "Up") → "WhatUpUpWhat"
 	 */
 	public String makeAbba(String a, String b) {
+
 		return null;
 	}
 
