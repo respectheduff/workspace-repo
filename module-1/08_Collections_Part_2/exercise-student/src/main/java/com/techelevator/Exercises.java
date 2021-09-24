@@ -34,6 +34,10 @@ public class Exercises {
 	 *
 	 */
 	public String animalGroupName(String animalName) {
+		String giraffe = new String( "Tower");
+		String  = new String( "unknown");
+		String walrus = new String( "unknown");
+		String rhino = new String( "Crash")
 		return null;
 	}
 

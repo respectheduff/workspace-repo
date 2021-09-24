@@ -27,7 +27,8 @@ public class Lecture {
 		System.out.println("####################");
 
 		//the elements will be returned in the same order they were added
-		for (int i = 0; i < names.size(); i++) {
+		\
+		
 			System.out.println(names.get(i));
 		}
 
