@@ -64,7 +64,22 @@ public class Exercises {
 	 *
 	 */
 	public double isItOnSale(String itemNumber) {
-		return -1.0;
+		Map<String, Double> itemDiscountMap = new HashMap<String, Double>();
+
+		itemDiscountMap.put("kitchen4001", 0.20);
+		itemDiscountMap.put("garage1070", 0.15);
+		itemDiscountMap.put("livingroom", 0.10);
+		itemDiscountMap.put("kitchen6073", 0.40);
+		itemDiscountMap.put("bedroom3434", 0.60);
+		itemDiscountMap.put("bath0073", 0.15);
+
+		String itemNumberLowerCase = itemNumber.toLowerCase();
+
+		if (itemDiscountMap.containsKey(itemNumberLowerCase)) {
+			return itemDiscountMap.get(itemNumberLowerCase);
+		}
+
+		return 0.00;
 	}
 
 	/*
@@ -78,7 +93,25 @@ public class Exercises {
 	 *
 	 */
 	public Map<String, Integer> robPeterToPayPaul(Map<String, Integer> peterPaul) {
-		return null;
+		int peterMoney = peterPaul.get("Peter");
+		int paulMoney = peterPaul.get("Paul");
+
+		if (peterMoney > 0 && paulMoney < 1000) {
+			if (peterMoney % 2 != 0) {
+				peterMoney = peterMoney / 2;
+				paulMoney = peterMoney + paulMoney;
+				peterMoney++;
+			} else if (peterMoney > 0 && paulMoney < 1000) {
+				peterMoney = peterMoney / 2;
+				paulMoney = peterMoney + paulMoney;
+			} else {
+				return peterPaul;
+			}
+		}
+		peterPaul.put("Peter", peterMoney);
+		peterPaul.put("Paul", paulMoney);
+
+		return peterPaul;
 	}
 
 	/*
@@ -205,7 +238,6 @@ public class Exercises {
 			return last2;
 		}
 		for (String word : words) {
-			//calculate how many time last 2 chars appear
 			String last2Chars = word.substring(word.length() - 2);
 			int howMany = 0;
 			for(int i = 0; i < word.length() - 2; i++) {
@@ -215,7 +247,6 @@ public class Exercises {
 				}
 			}
 
-			// put that into the map with the key (word)
 			last2.put(word, howMany);
 		}
 		return last2;
