@@ -34,10 +34,10 @@ public class Exercises {
 	 *
 	 */
 	public String animalGroupName(String animalName) {
-		String giraffe = new String( "Tower");
-		String  = new String( "unknown");
-		String walrus = new String( "unknown");
-		String rhino = new String( "Crash")
+		String giraffe = new String("Tower");
+		String = new String("unknown");
+		String walrus = new String("unknown");
+		String rhino = new String("Crash")
 		return null;
 	}
 
@@ -161,8 +161,25 @@ public class Exercises {
 	 *
 	 */
 	public Map<String, Integer> consolidateInventory(Map<String, Integer> mainWarehouse,
-			Map<String, Integer> remoteWarehouse) {
-		return null;
+													 Map<String, Integer> remoteWarehouse) {
+
+		Map<String, Integer> consolidatedWarehouse = new HashMap<>();
+
+		for (String sku : mainWarehouse.keySet()) {
+			Integer amount = mainWarehouse.get(sku);
+			consolidatedWarehouse.put(sku, amount);
+		}
+
+		for (String sku : remoteWarehouse.keySet()) {
+			Integer amount = remoteWarehouse.get(sku);
+			if (consolidatedWarehouse.containsKey(sku)) {
+				Integer existingAmount = consolidatedWarehouse.get(sku);
+				Integer totalAmount = existingAmount + amount;
+			} else {
+				consolidatedWarehouse.put(sku, amount);
+			}
+		}
+		return consolidatedWarehouse;
 	}
 
 	/*
@@ -181,7 +198,26 @@ public class Exercises {
 	 *
 	 */
 	public Map<String, Integer> last2Revisited(String[] words) {
-		return null;
-	}
+		Map<String, Integer> last2 = new HashMap<>();
 
+		if(words == null || words.length == 0) {
+
+			return last2;
+		}
+		for (String word : words) {
+			//calculate how many time last 2 chars appear
+			String last2Chars = word.substring(word.length() - 2);
+			int howMany = 0;
+			for(int i = 0; i < word.length() - 2; i++) {
+				String match = word.substring(i, i+ 2);
+				if(match.equals(last2Chars)) {
+					howMany++;
+				}
+			}
+
+			// put that into the map with the key (word)
+			last2.put(word, howMany);
+		}
+		return last2;
+	}
 }

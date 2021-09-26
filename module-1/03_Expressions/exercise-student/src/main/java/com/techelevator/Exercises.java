@@ -1,4 +1,4 @@
-package com.techelevator;
+ package com.techelevator;
 
 public class Exercises {
 
@@ -284,8 +284,13 @@ public class Exercises {
 	 dateFashion(5, 5) → 1
 	 */
 	public int dateFashion(int you, int date) {
-		if(){}
-		return 0;
+		if(you || date >= 8 ){
+			return 2;
+		}
+		if( you || date <= 2){
+			return 0;
+		}
+		return 1;
 	}
 
 	/*
@@ -297,6 +302,13 @@ public class Exercises {
 	 squirrelPlay(95, true) → true
 	 */
 	public boolean squirrelPlay(int temp, boolean isSummer) {
+		boolean isSummer = true;
+		if(( temp >= 60 && <= 90) && !isSummer){
+			return true;
+		}
+		if((temp >= 60 && <= 100) && isSummer){
+			return true;
+		}
 		return false;
 	}
 
@@ -321,9 +333,19 @@ public class Exercises {
      yourCakeAndEatItToo(11.00, false) → "special"
      */
    public String yourCakeAndEatItToo(double mealAmount, boolean isBirthday) {
-
-
-        return "";
+		if(mealAmount <= 10 && !isBirthday){
+			return standard;
+		}
+		if((mealAmount >= 6 || 10 ) && isBirthday){
+			return  special;
+		}
+		if((mealAmount > 10 && <= 15) && !isBirthday){
+			return Special;
+	   }
+       if(mealAmount >= 11 && isBirthday){
+       	return ginormous;
+	   }
+		return "";
     }
 
 	/*
@@ -334,7 +356,10 @@ public class Exercises {
 	 sortaSum(10, 11) → 21
 	 */
 	public int sortaSum(int a, int b) {
-		return 0;
+		if(( a + b )< 13 || >19){
+			return (a + b);
+		}
+		return 20;
 	}
 
 	/*
@@ -347,6 +372,16 @@ public class Exercises {
 	 alarmClock(0, false) → "10:00"
 	 */
 	public String alarmClock(int day, boolean vacation) {
+		if(day = 01 && !vacation){
+			return 10:00
+		}
+		if(day <= 6 && !vacation){
+			return 10:00
+		}
+		if(( day >= 0 && <7) && !vacation){
+			return 07:00
+		}
+		if()
 		return "";
 	}
 

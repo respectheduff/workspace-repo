@@ -26,7 +26,7 @@ public class Exercises {
 	 sameFirstLast([1, 2, 1]) → true
 	 */
 	public boolean sameFirstLast(int[] nums) {
-		if (nums[nums.length] > 1 && nums[0] == num[num.length - 1]){
+		if (nums[nums.length] > 0 && nums[0] == num[num.length - 1]){
 			return true;
 
 		}
@@ -78,9 +78,15 @@ public class Exercises {
 	 rotateLeft3([7, 0, 0]) → [0, 0, 7]
 	 */
 	public int[] rotateLeft3(int[] nums) {
-		pop([1]);
-		push([])
-		return new int[] {};
+		int temp = nums[0];
+
+		for (int i = 0; i < nums.length - 1; i++) {
+			nums[i] = nums[i + 1];
+		}
+
+		nums[nums.length - 1] = temp;
+
+		return nums;
 	}
 
 	/*
@@ -91,7 +97,12 @@ public class Exercises {
 	 reverse3([7, 0, 0]) → [0, 0, 7]
 	 */
 	public int[] reverse3(int[] nums) {
-		return new int[] {};
+		int[] newArray = new int[nums.length];
+		for (int i = nums.length - 1, j = 0; i >= 0; i--, j++) {
+			newArray[j] = nums[i];
+		}
+
+		return newArray;
 	}
 
 	/*
@@ -102,7 +113,13 @@ public class Exercises {
 	 maxEnd3([2, 11, 3]) → [3, 3, 3]
 	 */
 	public int[] maxEnd3(int[] nums) {
-		return new int[] {};
+		int largerNum = (nums[0] > nums[nums.length - 1]) ? nums[0] : nums[nums.length - 1];
+
+		for (int i = 0; i < nums.length; i++) {
+			nums[i] = largerNum;
+		}
+
+		return nums;
 	}
 
 	/*
@@ -113,7 +130,13 @@ public class Exercises {
 	 sum2([1, 1, 1, 1]) → 2
 	 */
 	public int sum2(int[] nums) {
-		return 0;
+		int sum = 0;
+
+		for (int i = 0; i < nums.length && i < 2; i++) {
+			sum += nums[i];
+		}
+
+		return sum;
 	}
 
 	/*
