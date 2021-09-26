@@ -4,6 +4,7 @@ public class Lecture {
 
 	public static void main(String[] args) {
 
+<<<<<<< HEAD
 		Set<Integer> uniqueNumbers = new HashSet<>();
 
 		Set<Strings> names = new HashSet<>();
@@ -18,6 +19,8 @@ public class Lecture {
 		names.add("Tom");
 
 
+=======
+>>>>>>> 4b26a73caaa253ac0b6eb7752e73fbdad8dfbba5
 	}
 
 }
