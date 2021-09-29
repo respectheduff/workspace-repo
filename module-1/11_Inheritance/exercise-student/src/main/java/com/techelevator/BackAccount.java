@@ -7,12 +7,12 @@ public class BackAccount {
     private int balance;
 
     public BankAccount() {
-      return this.accountHolderName;
-      return this.accountName;
-      return this.balance;
+      accountHolderName.get(String accountHolderName);
+      accountName.get(String accountName);
+      balance.get(int balance)
     }
-    int deposit(int amountToDeposit) = int deposit + this.balance;
-    int (int amountToWithdraw ) = int withdraw - this.balance;
+    int deposit((int amountToDeposit) == int amountToDeposit + balance.get);
+    int withdraw
     }
 }
 

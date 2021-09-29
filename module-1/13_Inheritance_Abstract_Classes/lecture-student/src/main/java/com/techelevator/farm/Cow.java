@@ -11,6 +11,7 @@ public class Cow extends FarmAnimal implements Sellable {
 	}
 
 	public BigDecimal getPrice() {
+
 		return price;
 	}
 }
