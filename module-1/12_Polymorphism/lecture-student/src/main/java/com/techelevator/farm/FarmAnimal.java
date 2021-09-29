@@ -10,10 +10,12 @@ public class FarmAnimal {
 	}
 
 	public String getName() {
+
 		return name;
 	}
 
 	public String getSound() {
+
 		return sound;
 	}
 
