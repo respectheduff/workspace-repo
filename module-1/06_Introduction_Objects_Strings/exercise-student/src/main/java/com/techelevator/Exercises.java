@@ -440,5 +440,5 @@ public class Exercises {
 			posYak = str.indexOf("yak");
 		}
 		return str;
-s
+	}
 }

@@ -3,20 +3,23 @@ package com.techelevator;
 public class BackAccount {
 
     private String accountHolderName;
-    private String accountName;
+    private String accountNumber;
     private int balance;
 
-    public BankAccount() {
-      accountHolderName.get(String accountHolderName);
-      accountName.get(String accountName);
-      balance.get(int balance)
+    public BankAccount(String accountHolderName, String accountName) {
+        this.accountHolderName = accountHolder;
+        this.accountNumber = accountNumber;
+
     }
-    int deposit((int amountToDeposit) == int amountToDeposit + balance.get);
-    int withdraw
+   public String getAccountHolderName() {
+       return accountHolderName;
+   }
+   public String getAccountNumber() {
+
     }
 }
 
 
-}
+
 
 

@@ -34,11 +34,23 @@ public class Exercises {
 	 *
 	 */
 	public String animalGroupName(String animalName) {
-		String giraffe = new String("Tower");
-		String = new String("unknown");
-		String walrus = new String("unknown");
-		String rhino = new String("Crash")
-		return null;
+		Map<String, String> animals = new HashMap<String, String>();
+		animals.put("rhino", "Crash");
+		animals.put("giraffe", "Tower");
+		animals.put("elephant", "Herd");
+		animals.put("lion", "Pride");
+		animals.put("crow", "Murder");
+		animals.put("pigeon", "Kit");
+		animals.put("flamingo", "Pat");
+		animals.put("deer", "Herd");
+		animals.put("dog", "Pack");
+		animals.put("crocodile", "Float");
+
+		if (animalName != null && animals.containsKey(animalName.toLowerCase())) {
+			return animals.get(animalName.toLowerCase());
+		} else {
+			return "unknown";
+		}
 	}
 
 	/*
@@ -124,7 +136,20 @@ public class Exercises {
 	 *
 	 */
 	public Map<String, Integer> peterPaulPartnership(Map<String, Integer> peterPaul) {
-		return null;
+		int petersMoney = peterPaul.get("Peter");
+		int paulsMoney = peterPaul.get("Paul");
+
+		if (petersMoney >= 5000 && paulsMoney >= 10000) {
+			int paulsContribution = paulsMoney / 4;
+			int petersContribution = petersMoney / 4;
+
+			peterPaul.put("Paul", peterPaul.get("Paul") - paulsContribution);
+			peterPaul.put("Peter", peterPaul.get("Peter") - petersContribution);
+			peterPaul.put("PeterPaulPartnership", paulsContribution + petersContribution);
+
+		}
+
+		return peterPaul;
 	}
 
 	/*
@@ -136,7 +161,12 @@ public class Exercises {
 	 * beginningAndEnding(["muddy", "good", "moat", "good", "night"]) → {"g": "d", "m": "t", "n": "t"}
 	 */
 	public Map<String, String> beginningAndEnding(String[] words) {
-		return null;
+		Map<String, String> output = new HashMap<String, String>();
+		for (String word : words) {
+			output.put(word.substring(0, 1), word.substring(word.length() - 1));
+		}
+
+		return output;
 	}
 
 	/*
@@ -152,7 +182,17 @@ public class Exercises {
 	 *
 	 */
 	public Map<String, Integer> wordCount(String[] words) {
-		return null;
+		Map<String, Integer> output = new HashMap<String, Integer>();
+
+		for (String word : words) {
+			if (!output.containsKey(word)) {
+				output.put(word, 1);
+			} else {
+				output.put(word, output.get(word) + 1);
+			}
+		}
+
+		return output;
 	}
 
 	/*
@@ -167,7 +207,17 @@ public class Exercises {
 	 *
 	 */
 	public Map<Integer, Integer> integerCount(int[] ints) {
-		return null;
+		Map<Integer, Integer> output = new HashMap<Integer, Integer>();
+
+		for (int number : ints) {
+			if (!output.containsKey(number)) {
+					output.put(number, 1);
+			} else {
+				output.put(number, output.get(number) + 1);
+			}
+		}
+
+		return output;
 	}
 
 	/*
@@ -180,7 +230,17 @@ public class Exercises {
 	 *
 	 */
 	public Map<String, Boolean> wordMultiple(String[] words) {
-		return null;
+		Map<String, Boolean> output = new HashMap<String, Boolean>();
+
+		for (String word : words) {
+			if (!output.containsKey(word)) {
+				output.put(word, false);
+			} else {
+				output.put(word, true);
+			}
+		}
+
+		return output;
 	}
 
 	/*
