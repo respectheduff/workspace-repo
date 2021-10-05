@@ -11,21 +11,39 @@ public class HomeworkAssignment {
         this.possibleMarks = possibleMarks;
         this.submitterName = submittername;
     }
+    public int getPossibleMarks() {
 
-    //Derived Property: letterGrade (there is no "String letterGrade
-    public String getLetterGrade() {
-        String grade = null;
-
-        return grade;
+        return possibleMarks;
     }
 
-    //Getters & Setters
-    public int gotEarnedMarks() {
+    public int getEarnedMarks()
+    {
         return earnedMarks;
     }
 
-}
+    public void setEarnedMarks(int earnedMarks) {
 
-public void setEarnedMarks(int earnedMarks) {
-    this.earnedMarks =
+        this.earnedMarks = earnedMarks;
+    }
+
+    public String getSubmitterName() {
+
+        return submitterName;
+    }
+
+    public String getLetterGrade() {
+        double percentage = (double) earnedMarks / possibleMarks;
+        if (percentage >= 0.9) {
+            return "A";
+        } else if (percentage >= 0.8) {
+            return "B";
+        } else if (percentage >= 0.7) {
+            return "C";
+        } else if (percentage >= 0.6) {
+            return "D";
+        } else {
+            return "F";
+        }
+    }
+
 }

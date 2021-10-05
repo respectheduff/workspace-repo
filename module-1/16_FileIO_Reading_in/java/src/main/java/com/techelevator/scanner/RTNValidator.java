@@ -11,7 +11,7 @@ public class RTNValidator {
 		System.out.println();
 	}
 
-	private boolean checksumIsValid(String routingNumber) {
+	public boolean checksumIsValid(String routingNumber) {
 		int checksum = 0;
 		for(int i = 0; i < 9; i++) {
 			int digit = Integer.parseInt(routingNumber.substring(i, i+1));
