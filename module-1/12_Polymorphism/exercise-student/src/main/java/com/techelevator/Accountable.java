@@ -1,12 +1,12 @@
 package com.techelevator;
 
-public interface Accountable extends BankAccount {
+public interface Accountable {
 
 
 
-    public int getBalance() {
+    public int getBalance();
 
-        getbalance = ("$" + super.Balance());
-    }
+
+
 
 }
