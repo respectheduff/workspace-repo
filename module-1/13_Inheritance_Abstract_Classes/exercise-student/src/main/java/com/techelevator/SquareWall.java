@@ -22,11 +22,15 @@ public class SquareWall extends RectangleWall{
         this.sideLength = sideLength;
     }
 
-    @Override
-    public String toString() {
-        return "SquareWall{" +
-                "sideLength=" + sideLength +
-                '}';
+
+    public int getArea(){
+        return sideLength * sideLength;
     }
+//    @Override
+//    public String toString() {
+//        return "SquareWall{" +
+//                "sideLength=" + sideLength +
+//                '}';
+//    }
     //public int toString( )
 }

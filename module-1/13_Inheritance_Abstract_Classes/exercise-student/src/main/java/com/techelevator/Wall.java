@@ -23,8 +23,8 @@ public class Wall {
     }
 
 
-    public int getArea() {
-        return length * height;
+    public int getArea(int i) {
+        return getArea(length * height);
     }
 
 }

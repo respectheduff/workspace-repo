@@ -14,12 +14,9 @@ public class RectangleWall extends Wall {
         this.height = height;
     }
 
-    @Override
-    public String toString() {
-        return "RectangleWall{" +
-                "length=" + length +
-                ", height=" + height +
-                '}';
+
+    public int getArea(){
+        return length * height;
     }
 
 
