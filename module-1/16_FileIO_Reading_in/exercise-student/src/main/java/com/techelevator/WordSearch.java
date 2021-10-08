@@ -12,13 +12,25 @@ public class WordSearch {
 		String titleOfFile = input.nextLine();
 
 		System.out.println("what is the search word you are looking for?");
-		boolean wordQuery = input.nextLine();
+		String wordQuery = input.nextLine();
 
 		File fileToFind = new File(titleOfFile);
+		try(Scanner fileScanner = new Scanner(fileToFind)){
+			int lineNumber = 1;
+			while(fileScanner.hasNextLine()){
+				String line = fileScanner.nextLine();
+				if (line.contains(wordQuery)){
+					System.out.println(lineNumber +". "+ line);
+				}
+				lineNumber++;
+			}
+
+		}catch(Exception e){
+			System.out.println("didnt work");
+		}
 
 
 
-		//getLineNumber()
 
 
 	}
