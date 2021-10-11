@@ -36,6 +36,18 @@ public class ExceptionsLecture {
 
 	public static void fahrenheitToFahrenheit() {
 		Scanner scan = new Scanner(System.in);
+<<<<<<< HEAD
+		System.out.print("Enter the number of degrees Fagrentheight >>>");
+		String userTyped = scan.nextLine();
+		try {
+			int userTypedAsInteger = Integer.parseInt(userTyped);
+			int answerInCelcius = userTypedInteger;
+			System.out.println( userTypedAsInteger + " dregrees F is equal to: " + answerInCelcuis + " in F");
+
+		} catch (Exception e) {
+			System.out.println("Hey, play nice");
+		}
+=======
 
 		boolean weHaveValidInput = false;
 
@@ -75,6 +87,7 @@ public class ExceptionsLecture {
 		}
 
 		return (numberOfGuests * extraGuestCharge) * numberOfNights + (numberOfNights * roomRate);
+>>>>>>> 7d496cba6d05c441566af586ff093d8e87d0d52a
 	}
 
 	public static void main(String[] args) {
