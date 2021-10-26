@@ -1,5 +1,6 @@
 package com.techelevator.city;
-
+// Domain Object
+//  POJO
 public class City {
         private String full_name;
         private int geoname_id;
