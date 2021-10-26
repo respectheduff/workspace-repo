@@ -20,11 +20,13 @@ public class JdbcDepartmentDao implements DepartmentDao {
 
 	@Override
 	public Department getDepartment(Long id) {
+
 		return new Department(0L, "Not Implemented Yet");
 	}
 
 	@Override
 	public List<Department> getAllDepartments() {
+
 		return new ArrayList<>();
 	}
 
