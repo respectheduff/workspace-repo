@@ -12,13 +12,13 @@ public class AuctionService {
     private final ConsoleService console = new ConsoleService();
 
     public AuctionService(String apiUrl, String apiKey) {
-        API_URL = apiUrl;
-        API_KEY = apiKey;
+        API_URL =  "https://te-pgh-api.azurewebsites.net/api/auctions?apikey=";
+        API_KEY = "03006";
     }
 
     public Auction[] listAllAuctions() {
         // api code here
-        return null;
+        return restTemplate.getForObject(API_URL + "auctions?apikey=" + API_KEY, Auction[].class);
     }
 
     public Auction listDetailsForAuction(int id) {
