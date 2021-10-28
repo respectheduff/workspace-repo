@@ -16,7 +16,7 @@ public class LocationService {
 
     public Location getOne(int id) {
         //Step Six: Get location details
-        return restTemplate.getForObject(API_BASE_URL + id, Location.class);
+        return  restTemplate.getForObject(API_BASE_URL + id, Location.class);
     }
 
 }
