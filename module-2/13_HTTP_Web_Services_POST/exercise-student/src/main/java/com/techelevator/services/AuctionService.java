@@ -8,6 +8,7 @@ import org.springframework.web.client.RestClientResponseException;
 import org.springframework.web.client.RestTemplate;
 
 import com.techelevator.model.Auction;
+import org.w3c.dom.css.CSSValue;
 
 public class AuctionService {
 
@@ -71,16 +72,41 @@ public class AuctionService {
 
     public Auction add(String auctionString) {
         // place code here
+        Auction Auction = makeAuction( auctionString );
+        if (Auction == null){
         return null;
+        }
+        HttpEntity entity = makeEntity(Auction);
+        try {
+            Auction = restTemplate.postForObject(API_URL + "?apikey=" + API_KEY, entity, Auction.class);
+        } catch (RestClientResponseException ex) {
+            console.printError(ex.getRawStatusCode() + " : " + ex.getStatusText());
+        }
+        return Auction;
     }
 
     public Auction update(String auctionString) {
         // place code here
-        return null;
+        Auction Auction = makeAuction( auctionString);
+        if (Auction == null) {
+            return null;
+        }
+        try {
+            restTemplate.put(API_URL + "/" + Auction.getId() + "?apikey=" + API_KEY, Auction);
+        } catch (RestClientResponseException ex) {
+            console.printError(ex.getRawStatusCode() + " : " + ex.getStatusText());
+            Auction = null;
+        }
+        return Auction;
     }
 
     public boolean delete(int id) throws RestClientResponseException, ResourceAccessException {
         // place code here
+        try {
+            restTemplate.delete(API_URL + "/" + id + "?apikey=" + API_KEY);
+        } catch (RestClientResponseException ex) {
+            console.printError(ex.getRawStatusCode() + " : " + ex.getStatusText());
+        }
         return false;
     }
 
