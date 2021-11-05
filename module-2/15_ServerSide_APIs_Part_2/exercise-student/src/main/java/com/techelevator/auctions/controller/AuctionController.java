@@ -1,6 +1,7 @@
 package com.techelevator.auctions.controller;
 
-import com.techelevator.auctions.dao.AuctionDao;
+
+import com.techelevator.auctions.DAO.AuctionDAO;
 import com.techelevator.auctions.exception.AuctionNotFoundException;
 import com.techelevator.auctions.model.Auction;
 
@@ -16,9 +17,9 @@ import java.util.List;
 public class AuctionController {
 
     @Autowired
-    private AuctionDao dao;
+    private AuctionDAO dao;
 
-    public AuctionController(AuctionDao dao) {
+    public AuctionController(AuctionDAO dao) {
         this.dao = dao;
     }
 
