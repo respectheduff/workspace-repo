@@ -1,0 +1,30 @@
+/*
+
+CSS: Cascading Style Sheets, v3
+
+-- Series of rules
+
+- One rule:
+
+Selector {
+    key: value;
+    key2: value;
+    key3: value3;
+    keytruda billboards EVERYWHERE;
+}
+
+*/
+
+img {
+    height: 200px;
+    width: 300px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif ;
+}
+
+h1 {
+    font-size: 70px;
+    color: cornflowerblue;
+}
