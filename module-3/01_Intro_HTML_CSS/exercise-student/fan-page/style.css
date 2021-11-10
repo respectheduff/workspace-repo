@@ -1,0 +1,30 @@
+header{
+    text-align: center;
+}
+ 
+P {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 15px;
+    
+}
+
+h2 {
+   color: blanchedalmond; 
+   text-decoration: underline;
+}
+
+body {
+    background-color: darkcyan;
+    border: darkgoldenrod;
+}
+
+img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#quotes {
+    font-style: italic;
+}
