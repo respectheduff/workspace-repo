@@ -16,3 +16,8 @@ body {
   width: 90%;
 }
 /* ---- Paste below ---- */
+#left-panel {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+}
