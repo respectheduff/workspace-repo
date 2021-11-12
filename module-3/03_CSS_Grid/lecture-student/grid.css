@@ -1,0 +1,36 @@
+header {
+    grid-area: h;
+
+}
+
+#menu-nav {
+ grid-area: m;
+}
+
+main {
+    grid-area: s;
+}
+
+aside#upcoming-events {
+    grid-area: e;
+}
+
+footer {
+    grid-area: f;
+}
+
+div.container {
+    display: grid;
+    grid-template-columns:
+    200px 200px 200px;
+    grid-template-areas:
+     "h h h"
+     "m s e"
+     "f f f"
+     ;
+     row-gap: 10px;
+     column-gap: 10px;
+     height: 100vh;
+
+      /* a period is used to create a blank grid space */
+}
