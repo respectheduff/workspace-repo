@@ -9,20 +9,27 @@
  * They don't have a return type and the naming convention is camel-case.
  */
 function variables() {
+  console.log("Hello world");
   // Declares a variable where the value cannot be changed
+  const y = 6; // "final" in java
+  
   // Declares a variable those value can be changed
+  let z = 10
+
   // Declares a variable that will always be an array
+  const arr = []; // declares new empty array
+
 }
 
 /**
  * Functions can also accept parameters.
  * Notice the parameters do not have types.
- * @param {Number} param1 The first number to display
- * @param {Number} param2 The second number to display
+ * @param {Number} input1 The first number to display
+ * @param {Number} input2 The second number to display
  */
 function printParameters(param1, param2) {
-  console.log(`The value of param1 is ${param1}`);
-  console.log(`The value of param2 is ${param2}`);
+  console.log("The value of param1 is " + input1);     //concatenation
+  console.log(`The value of param2 is ${input2}`); //interpolation
 }
 
 /**
@@ -74,10 +81,15 @@ function objects() {
   };
 
   // Log the object
-
+console.log(person);
   // Log the first and last name
-
+console.log(person.firstName);
+console.log(person.lastName);
+console.log(`${person.lastName}, ${person.firstName}`);
   // Log each employee
+  for(let i =0; i < person.employees.length: i++) {
+    console.log(person.employees[i]);
+  }
 }
 
 /*
@@ -138,4 +150,11 @@ function stringFunctions(value) {
         - trim()
         - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
     */
+}
+
+function variableNumberOfParameters1() {
+  console.log(arguments);
+}
+function variableNumberOfParameters2(.....varArgs) {
+  console.log(varArgs);
 }
