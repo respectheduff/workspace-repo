@@ -6,12 +6,19 @@
  * This function will get a reference to the title and set its text to the value
  * of the pageTitle variable that was set above.
  */
-function setPageTitle() {}
+function setPageTitle(pageTitle, groceries) {
+   pageTitle = 'My Shopping List';
+   groceries = [walnuts, peanuts, ground_beef, buns, eggs, milk, butter, water, bags, bread];
+}
 
 /**
  * This function will loop over the array of groceries that was set above and add them to the DOM.
  */
-function displayGroceries() {}
+function displayGroceries() {
+  for(i = 0 ; i < groceries.length ; i++)
+  item = groceries[i];
+  console.out(item + ",");
+}
 
 /**
  * This function will be called when the button is clicked. You will need to get a reference

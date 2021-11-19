@@ -1,4 +1,4 @@
-# DOM Exercise
+  # DOM Exercise
 
 In this exercise, you'll build a shopping list from data. You'll find all of the code you need to get started in the folder `shopping-list`.
 

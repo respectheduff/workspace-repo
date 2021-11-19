@@ -19,6 +19,22 @@
  * @param {boolean} [recommendation=false] does the student have a recommendation
  * @returns {boolean} true if they are admitted
  */
+function isAdmitted(gpa, satScore, recommendation ){
+
+    if(gpa > 4.0) {
+        return true;
+    }
+    if(satScore > 1300){
+        return true;
+    }
+    if(gpa >3.0 && recommendation==true){
+        return true;
+    }
+    if(satScore >1200 && recommendation==true){
+        return true;
+    }
+    return false;
+}
 
 /**
  * Write a function called useParameterToFilterArray that takes an anonymous
@@ -55,7 +71,10 @@ let unfilteredArray = [1, 2, 3, 4, 5, 6];
  * an array and prepends 'Happy ' to the beginning of all the
  * words and returns them as a new array. Use the `map` function.
  */
+function makeHappy(array) {
+    array.map(n => "Happy " + n);
 
+}
 /*
  * Write and document a function called getFullAddressesOfProperties
  * that takes an array of JavaScript objects containing the
@@ -73,7 +92,15 @@ let unfilteredArray = [1, 2, 3, 4, 5, 6];
  *
  * Use `map` and an anonymous function.
  */
+function getFullAddressesOfProperties(array) {
+    let transformedObject = array.map((obj) => {
+       return array.map(obj => `${obj.streetNumber}`)
+        
+       
 
+
+    });
+}
 /*
  * Write and document a function called findLargest.
  *
