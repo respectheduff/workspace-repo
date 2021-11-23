@@ -11,12 +11,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><input type="text" id="firstNameFilter"/></td>
-        <td><input type="text" id="lastNameFilter"/></td>
-        <td><input type="text" id="usernameFilter"/></td>
-        <td><input type="text" id="emailFilter"/></td>
+        <td><input type="text" id="firstNameFilter" v-model="filter.firstName" /></td>
+        <td><input type="text" id="lastNameFilter" v-model="filter.LastName"/></td>
+        <td><input type="text" id="usernameFilter" v-model="filter.userName"/></td>
+        <td><input type="text" id="emailFilter" v-model="filter.emailAddress"/></td>
         <td>
-          <select id="statusFilter">
+          <select id="statusFilter" v-model="filter.status">
             <option value="">Show All</option>
             <option value="Active">Active</option>
             <option value="Disabled">Disabled</option>
@@ -24,6 +24,14 @@
         </td>
       </tr>
       <!-- user listing goes here -->
+      <tr v-for="user in users" v-bind:key="user.id" v-bind:class="{disabled : user.status === 'Disabled' }">
+        <td>{{user.firstName}}</td>
+        <td>{{user.lastname}}</td>
+        <td>{{user.username}}</td>
+        <td>{{user.emailAdress}}</td>
+        <td>{{user.status}}</td>
+
+        </tr>
     </tbody>
   </table>
 </template>
@@ -33,6 +41,7 @@ export default {
   name: 'user-list',
   data() {
     return {
+      filter:{firstName: '', lastName: '', userName: '', emailAddress: '', status: ''},
       users: [
         { firstName: 'John', lastName: 'Smith', username: 'jsmith', emailAddress: 'jsmith@gmail.com', status: 'Active' },
         { firstName: 'Anna', lastName: 'Bell', username: 'abell', emailAddress: 'abell@yahoo.com', status: 'Active' },
@@ -41,6 +50,14 @@ export default {
         { firstName: 'Katie', lastName: 'Jackson', username: 'kjackson', emailAddress: 'kjackson@yahoo.com', status: 'Active' },
         { firstName: 'Mark', lastName: 'Smith', username: 'msmith', emailAddress: 'msmith@foo.com', status: 'Disabled' }
       ]
+    }
+  },
+  computed: {
+    filteredList() {
+      let output = [];
+    return this.users.filter((user) => {
+      return user.firstName.toLowerCase().includes(this.filter.firstName);
+    });
     }
   }
 }
