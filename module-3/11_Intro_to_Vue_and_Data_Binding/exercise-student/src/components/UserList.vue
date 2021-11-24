@@ -54,9 +54,31 @@ export default {
   },
   computed: {
     filteredList() {
-      let output = [];
-    return this.users.filter((user) => {
-      return user.firstName.toLowerCase().includes(this.filter.firstName);
+      let output = this.user;
+
+  if(this.filter.firstName !== '') {
+    output = output.users.filter((user) => {
+     return user.firstName.toLowerCase().includes(this.filter.firstName.toLowerCase());
+    });
+    }
+    if(this.filter.lastName !== '') {
+    output = output.users.filter((user) => {
+     return user.lastName.toLowerCase().includes(this.filter.lastName.toLowerCase());
+    });
+    }
+    if(this.filter.userName !== '') {
+    output = output.users.filter((user) => {
+     return user.userName.toLowerCase().includes(this.filter.userName.toLowerCase());
+    });
+    }
+    if(this.filter.emailAddress !== '') {
+    output = output.users.filter((user) => {
+     return user.emailAddress.toLowerCase().includes(this.filter.emailAddress.toLowerCase());
+    });
+    }
+    if(this.filter.status !== '') {
+    output = output.users.filter((user) => {
+     return user.status.toLowerCase().includes(this.filter.status.toLowerCase());
     });
     }
   }
