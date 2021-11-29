@@ -80,6 +80,9 @@ export default {
     output = output.users.filter((user) => {
      return user.status.toLowerCase().includes(this.filter.status.toLowerCase());
     });
+  
+    }
+    return output;
     }
   }
   
