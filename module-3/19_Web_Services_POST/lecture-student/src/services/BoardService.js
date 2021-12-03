@@ -4,7 +4,7 @@ const http = axios.create({
   baseURL: "https://te-pgh-api.azurewebsites.net/api",
   headers: {
     common: {
-      APIKEY: 000000
+      APIKEY: "00000"
     }
   }
 });
@@ -21,6 +21,10 @@ export default {
 
   getCard(cardID) {
     return http.get(`/cards/${cardID}`)
+  },
+
+  addBoard(board) {
+    return http.post('/boards', board)
   },
 
   addCard(card) {

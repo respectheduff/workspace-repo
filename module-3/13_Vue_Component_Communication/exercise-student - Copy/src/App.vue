@@ -1,16 +1,18 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link :to="{name: 'Home' }">Home</router-link>
-      <router-link :to="{name: 'MyBooks' }">MyBooks</router-link>
-    <router-view />
+    <h1>Reading List</h1>
+    <reading-list />
   </div>
 </template>
 
 <script>
+import ReadingList from './components/ReadingList.vue';
 
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    ReadingList
+  }
 }
 </script>
 
